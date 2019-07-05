@@ -1,6 +1,11 @@
-# AutoBuJoUI
+# AutoBujoUI - Digital bullet journal with custom modules
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+
+## Features
+
+* Automates base template creation for the respective BuJo modules
+* Provides different visualizations for the BuJo data
 
 ## Development server
 
