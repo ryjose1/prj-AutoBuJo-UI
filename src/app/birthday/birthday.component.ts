@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { birthdays } from '../birthdays';
+import { Month } from './month.enum';
+
+
 @Component({
   selector: 'app-birthday',
   templateUrl: './birthday.component.html',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BirthdayComponent implements OnInit {
 
-  constructor() { }
+  birthdays = birthdays;
+  months = Object.values(Month).filter(value => typeof value === 'string');
+
+  constructor() {}
 
   ngOnInit() {
+    console.log(this.months);
   }
-
 }

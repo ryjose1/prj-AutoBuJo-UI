@@ -4,11 +4,13 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BirthdayComponent } from './birthday/birthday.component';
+import { MonthComponent } from './birthday/month/month.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BirthdayComponent
+    BirthdayComponent,
+    MonthComponent
   ],
   imports: [
     BrowserModule,
@@ -19,4 +21,5 @@ import { BirthdayComponent } from './birthday/birthday.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
