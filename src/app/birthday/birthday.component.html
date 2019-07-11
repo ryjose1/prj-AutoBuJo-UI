@@ -1,7 +1,9 @@
 <h2>Birthdays</h2>
 
 <div *ngFor="let month of months">
-  <h3>
-    {{ month }}
-  </h3>
+  <app-month
+    [month]="month"
+    [birthdays]="birthdays"
+  >
+  </app-month>
 </div>
