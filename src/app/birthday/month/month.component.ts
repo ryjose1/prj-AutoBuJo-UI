@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Month} from '../month.enum';
 
 @Component({
   selector: 'app-month',
@@ -13,6 +14,14 @@ export class MonthComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  
+  getBirthdays(): string[] {
+    const birthdaysThisMonth = [];
+    const month = this.month;
+    this.birthdays.forEach(function(person) {
+      if (Month[+person.month] === month) {
+        birthdaysThisMonth.push(person.name);
+      }
+    });
+    return birthdaysThisMonth;
+  }
 }

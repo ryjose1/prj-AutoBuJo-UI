@@ -1,1 +1,6 @@
-<div>{{ month }} birthdays</div>
+<div>
+  <h3> {{ month }} birthdays </h3>
+  <h3 *ngFor="let birthday of getBirthdays()">
+    {{ birthday }}
+  </h3>
+</div>

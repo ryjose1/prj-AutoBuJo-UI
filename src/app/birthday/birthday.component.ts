@@ -17,6 +17,5 @@ export class BirthdayComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(this.months);
   }
 }
