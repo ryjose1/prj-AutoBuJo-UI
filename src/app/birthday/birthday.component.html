@@ -1,9 +1,17 @@
 <h2>Birthdays</h2>
 
-<div *ngFor="let month of months">
-  <app-month
-    [month]="month"
-    [birthdays]="birthdays"
+<mat-grid-list cols="4">
+  <mat-grid-tile
+    *ngFor="let month of months"
+    [style.background]="'lightblue'"
   >
-  </app-month>
+    <app-month
+      [month]="month"
+      [birthdays]="birthdays"
+    >
+    </app-month>
+  </mat-grid-tile>
+</mat-grid-list>
+<div >
+
 </div>

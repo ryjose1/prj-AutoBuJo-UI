@@ -3,17 +3,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { BirthdayModule } from './birthday/birthday.module';
 import { BirthdayComponent } from './birthday/birthday.component';
-import { MonthComponent } from './birthday/month/month.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BirthdayComponent,
-    MonthComponent
   ],
   imports: [
     BrowserModule,
+    BirthdayModule,
     RouterModule.forRoot([
       { path: '', component: BirthdayComponent }
     ])
