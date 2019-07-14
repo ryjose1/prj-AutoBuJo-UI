@@ -17,9 +17,9 @@ export class MonthComponent implements OnInit {
   getBirthdays(): string[] {
     const birthdaysThisMonth = [];
     const month = this.month;
-    this.birthdays.forEach(function(person) {
+    this.birthdays.forEach(person => {
       if (Month[+person.month] === month) {
-        birthdaysThisMonth.push(person.name);
+        birthdaysThisMonth.push(person);
       }
     });
     return birthdaysThisMonth;
