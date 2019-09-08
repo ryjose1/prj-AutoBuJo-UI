@@ -1,6 +1,27 @@
 <h2>Birthdays</h2>
 
 <mat-grid-list cols="4">
+  <form [formGroup]="birthdayForm" (ngSubmit)="onSubmit(birthdayForm.value)">
+    <div>
+      <label for="name">
+        Name
+      </label>
+      <input id="name" type="text" formControlName="name">
+    </div>
+    <div>
+      <label for="month">
+        Month
+      </label>
+      <input id="month" type="text" formControlName="month">
+    </div>
+    <div>
+      <label for="day">
+        Day
+      </label>
+      <input id="day" type="text" formControlName="day">
+    </div>
+    <button class="button" type="submit">Add Birthday</button>
+  </form>
   <mat-grid-tile
     *ngFor="let month of months"
     [style.background]="'lightblue'"

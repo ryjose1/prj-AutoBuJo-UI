@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { MatGridListModule } from '@angular/material';
 import { MonthComponent } from './month/month.component';
 import { BirthdayComponent } from './birthday.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { BirthdayComponent } from './birthday.component';
   ],
   imports: [
     BrowserModule,
-    MatGridListModule
+    MatGridListModule,
+    ReactiveFormsModule
   ],
   bootstrap: [BirthdayComponent],
   exports: [BirthdayComponent]
